@@ -72,7 +72,7 @@ body {
     padding-top: 12px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #207868;
     color: white;
     border-radius: 4px;
+    display: none;
 }
