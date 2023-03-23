@@ -1,7 +1,11 @@
-function btnCadastrar() {
+async function btnCadastrar() {
     if (validacao()) {
     const titulo = coletarInputs("inputTitulo")
     const descricao = coletarInputs("inputDescricao")
+
+    const resposta = await enviarParaApi(titulo, descricao)
+    exibirRetornoEnvio(resposta)
+    
     }
 }
 
@@ -38,6 +42,34 @@ function validacao() {
         resultado.innerHTML = "Enviado com sucesso!"
         resultado.style.display = "block"
         resultado.style.backgroundColor = "#207868"
+
+        return true
     }
     
+}
+
+async function enviarParaApi(valor01, valor02) {
+    const url = `https://target-api-simples.cyclic.app/livros`
+
+    const options = {
+        method: "POST",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify({
+            title: valor01,
+            description: valor02
+        })    
+    }
+
+    const response = await fetch(url, options)
+    const responseData = await response.json()
+    
+    return responseData
+    
+}
+
+function exibirRetornoEnvio(respostaEnvio){
+    const elemento = document.getElementById("conteinerResultado")
+    elemento.innerText = respostaEnvio
 }

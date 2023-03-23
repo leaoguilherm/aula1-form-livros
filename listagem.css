@@ -32,6 +32,7 @@ body {
     color: white;
     margin-left: 14px;
     font-family: sans-serif;
+    
 }
 
 .link:hover {
@@ -40,6 +41,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .titulo {
     color: #38444e;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,48 +49,53 @@ body {
     height: 50px;
     margin-top: 15px;
     margin-left: 20%;
-
 }
 
-.entradaDados {
-    margin: 20px 90px 10px 90px;
-}
-
-.entradaDados input {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px;
-    width: 100%;
-    font-size: 20px;
-    border: solid rgb(185, 185, 185);
-    border-radius: 4px;
-}
-
-.btnCadastrar {
+.btnBuscar {
     width: 100%;
     padding: 10px;
     background-color: #4B5C6B;
     color: white;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     border-radius: 4px;
     border: 1px #4B5C6B;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.btnCadastrar:hover {
+.btnBuscar:hover {  
     color: rgb(218, 218, 218);
     background-color: #445361;
 }
 
-.resultado {
-    border: solid 1px #207868;
-    height: 35px;
-    text-align: center;
-    padding-top: 6px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    border-radius: 4px;
+.buscarDados{
+    margin: 20px 90px 0px 90px;
+}
+
+.retornoApi {
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
     display: none;
+}
+
+.table {
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table th {
+    border: solid 1px;
+    background-color: #4B5C6B;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table td {
+    border: solid 1px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
 }
