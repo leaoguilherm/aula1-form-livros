@@ -23,7 +23,7 @@ function validacao() {
         const resultado = document.getElementById("conteinerResultado")
         resultado.innerHTML = "Formulário inválido: Digite o título do livro."
         resultado.style.display = "block"
-        resultado.style.backgroundColor = "red"
+        resultado.style.backgroundColor = "#AC6363"
 
         return false
     }
@@ -32,7 +32,7 @@ function validacao() {
         const resultado = document.getElementById("conteinerResultado")
         resultado.innerHTML = "Formulário inválido: Digite a descrição do livro."
         resultado.style.display = "block"
-        resultado.style.backgroundColor = "red"
+        resultado.style.backgroundColor = "#AC6363"
         
         return false
     }

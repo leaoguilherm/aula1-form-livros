@@ -32,7 +32,7 @@ body {
     color: white;
     margin-left: 14px;
     font-family: sans-serif;
-    
+
 }
 
 .link:hover {
@@ -63,13 +63,20 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.btnBuscar:hover {  
+.btnBuscar:hover {
     color: rgb(218, 218, 218);
     background-color: #445361;
 }
 
-.buscarDados{
-    margin: 20px 90px 0px 90px;
+.buscarDados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .retornoApi {
