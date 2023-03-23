@@ -74,9 +74,10 @@ body {
 
 .retornoApi {
     background-color: white;
-    height: auto;
     border-radius: 10px;
     display: none;
+    height: 390px;
+    overflow: scroll;
 }
 
 .table {
