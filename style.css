@@ -51,14 +51,7 @@ body {
 }
 
 .entradaDados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 20px 90px 10px 90px;
 }
 
 .entradaDados input {
@@ -89,10 +82,8 @@ body {
 }
 
 .resultado {
+    border: solid 1px #207868;
     height: 35px;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     padding-top: 6px;
     font-size: 18px;
@@ -101,4 +92,3 @@ body {
     border-radius: 4px;
     display: none;
 }
-
