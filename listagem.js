@@ -37,7 +37,7 @@ function listarTabela(array) {
         const tdTitle = criarLinhaTabela.insertCell();
         const tdDescription = criarLinhaTabela.insertCell();
 
-        tdId.innerText = index + 1
+        tdId.innerText = array[index].id;
         tdTitle.innerText = array[index].title;
         tdDescription.innerText = array[index].description;
 
