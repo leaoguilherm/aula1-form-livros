@@ -80,6 +80,12 @@ body {
     overflow: scroll;
 }
 
+.totalDeLivros {
+    text-align: center;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .table {
     border: solid 1px;
     border-radius: 10px;

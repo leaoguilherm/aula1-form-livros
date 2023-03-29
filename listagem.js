@@ -27,9 +27,15 @@ async function buscarNaApi(){
 }
 
 function listarTabela(array) {
+    //Total de livros cadastrados.
+    const elementoTotalDeLivros = document.getElementById("totalLivros")
+    elementoTotalDeLivros.innerText = array.length + " Livros cadastrados."
+
+    //Pegando elemento corpo da tabela.
     const elementoTabela = document.getElementById("tbody")
     elementoTabela.innerText = ""
 
+    //Looping para mostrar a tabela com os dados da API.
     for (let index = 0; index < array.length; index++) {
         const criarLinhaTabela = elementoTabela.insertRow();
         
